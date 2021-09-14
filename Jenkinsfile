@@ -8,6 +8,12 @@ pipeline {
     }
 
     stage('Deploy') {
+      agent {
+        node {
+          label 'slave'
+        }
+
+      }
       steps {
         sh 'echo "Deployed successfully"'
         sh 'echo "nothing"'
