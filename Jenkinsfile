@@ -10,7 +10,7 @@ pipeline {
     stage('Deploy') {
       steps {
         sh 'echo "Deployed successfully"'
-        sh 'echo "Deploy in prod"'
+        sh 'echo "Deploy in uat"'
       }
     }
 
